@@ -6,7 +6,7 @@ test:
 	python -m pytest -vv test_hello.py
 
 format-check:
-	black --check *.py
+	black --check *.py --diff
 
 lint:
 	pylint --disable=R,C hello.py
